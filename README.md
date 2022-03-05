@@ -1,6 +1,6 @@
 # :musical_note: Wavegroove
 
-This is simple MP3 files offline player for Android devices (Android version 7.0+). This application was designed with Figma, developed with Kotlin and tested with Pytest and Selenium. Wavegroove allows users to play their favourite music, create own playlists and queue (and modify) songs.
+This is simple MP3 files offline player for Android devices (Android version 7.0+). This application was designed with Figma, developed with Java and tested with Pytest and Selenium. Wavegroove allows users to play their favourite music, create own playlists and queue (and modify) songs.
 
 ## Application screenshots
 
