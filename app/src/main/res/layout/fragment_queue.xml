@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragments.QueueFragment"
+        android:animateLayoutChanges="true">
+
+    <include
+            android:id="@+id/queueNowPlayingElement"
+            layout="@layout/queue_now_playing"
+            android:layout_width="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="15dp"
+            android:layout_height="100dp" />
+
+    <TextView
+            android:id="@+id/nextTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/queueNowPlayingElement"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="next:"
+            android:textColor="@color/AppTextColor"
+            android:textSize="24dp"
+            android:textStyle="italic" />
+
+    <TextView
+            android:id="@+id/emptyQueueTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="330dp"
+            android:gravity="center"
+            android:text="your queue is empty,\nadd songs to queue\nfrom any playlist"
+            android:textColor="@color/AppTextColor"
+            android:textSize="24dp"
+            android:textStyle="italic" />
+
+
+    <ListView
+            android:id="@+id/queuedSongsListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/nextTextView"
+            android:layout_marginTop="0dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="20px"
+            android:paddingHorizontal="10dp"
+            android:scrollbarStyle="outsideInset" />
+
+</RelativeLayout>

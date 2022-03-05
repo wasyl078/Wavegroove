@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".general.MainActivity"
+        android:orientation="horizontal"
+        android:id="@+id/mainLayout"
+        android:animateLayoutChanges="true">
+
+    <TextView
+            android:id="@+id/actualFragmentTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@+id/allPlaylistsHamburgerImageButton"
+            android:ellipsize = "marquee"
+            android:fadingEdge = "horizontal"
+            android:marqueeRepeatLimit = "marquee_forever"
+            android:scrollHorizontally = "true"
+            android:singleLine = "true"
+            android:gravity="center_horizontal"
+            android:text="list of your playlists"
+            android:textColor="@color/AppTextColor"
+            android:textSize="24dp"
+            android:textStyle="italic" />
+
+    <ImageButton
+            android:id="@+id/allPlaylistsHamburgerImageButton"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="13dp"
+            android:background="@android:color/transparent"
+            android:onClick="onHamburgerClick"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_vertical_dots" />
+
+    <include
+            layout="@layout/dropdown_menu"
+            android:id="@+id/dropdownMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/allPlaylistsHamburgerImageButton"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="2dp"
+            android:layout_marginTop="0dp"
+            android:visibility="gone" />
+
+    <FrameLayout
+            android:id="@+id/mainFrameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/musicBarIncluded"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="0dp">
+
+    </FrameLayout>
+
+    <ImageView
+            android:id="@+id/blueBottomNavBarBacgroundImageView"
+            android:background="@color/AppBlue"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp" />
+
+    <ImageView
+            android:id="@+id/playlistPlayImageView"
+            android:src="@drawable/ic_playlist_play"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitXY"
+            android:onClick="changeFragmentToAllPlaylistsFragment"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="12dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="50dp" />
+
+    <ImageView
+            android:id="@+id/playlistNuteImageView"
+            android:src="@drawable/ic_playlist_nute"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitXY"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="12dp"
+            android:layout_alignParentEnd="true"
+            android:onClick="changeFragmentToQueueFragment"
+            android:layout_marginEnd="50dp" />
+
+    <ImageView
+            android:id="@+id/hifiMainButtonImageView"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="6dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/hifi" />
+
+    <include
+        android:id="@+id/musicBarIncluded"
+        layout="@layout/music_bar"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_above="@+id/blueBottomNavBarBacgroundImageView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="0dp" />
+</RelativeLayout>

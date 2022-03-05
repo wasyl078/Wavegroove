@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragments.SinglePlaylistFragment"
+        android:animateLayoutChanges="true">
+
+
+    <TextView
+            android:id="@+id/emptyPlaylistTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="your playlist is empty,\nadd some new songs\nfrom file list"
+            android:textColor="@color/AppTextColor"
+            android:textSize="24dp"
+            android:textStyle="italic" />
+
+
+    <include
+            android:id="@+id/addFilesSinglePlaylistButton"
+            layout="@layout/custom_button"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="35dp"
+            android:layout_marginBottom="20dp" />
+
+    <include
+            android:id="@+id/startPlaylistSinglePlaylistButton"
+            layout="@layout/custom_button"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="35dp"
+            android:layout_marginBottom="20dp" />
+
+    <ListView
+            android:id="@+id/playlistSongsListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="20px"
+            android:paddingHorizontal="10dp"
+            android:scrollbarStyle="outsideInset" />
+</RelativeLayout>

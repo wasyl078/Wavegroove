@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_rounded_corners_border"
+        android:paddingVertical="5dp"
+        android:animateLayoutChanges="true">
+
+
+    <TextView
+            android:id="@+id/queueNowPlayingTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="10dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="now playing:"
+            android:textColor="@color/Black"
+            android:textSize="13sp" />
+
+    <ImageView
+            android:id="@+id/queueImageView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/queueNowPlayingTextView"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="3dp"
+            android:backgroundTint="@android:color/black"
+            app:srcCompat="@drawable/hifi" />
+
+    <TextView
+            android:id="@+id/queueTitleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/queueNowPlayingTextView"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@+id/verticalDotsSongRowImageView"
+            android:layout_toEndOf="@+id/queueImageView"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Title"
+            android:textColor="@color/Black"
+            android:textSize="13sp" />
+
+    <TextView
+            android:id="@+id/queueAlbumTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/queueArtistTextView"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@+id/verticalDotsSongRowImageView"
+            android:layout_toEndOf="@+id/queueImageView"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Album"
+            android:textColor="@color/Black"
+            android:textSize="13sp" />
+
+    <TextView
+            android:id="@+id/queueArtistTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/queueTitleTextView"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@+id/verticalDotsSongRowImageView"
+            android:layout_toEndOf="@+id/queueImageView"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Artist"
+            android:textColor="@color/Black"
+            android:textSize="13sp" />
+
+    <ImageView
+            android:id="@+id/verticalDotsQueueImageView"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            app:srcCompat="@drawable/ic_vertical_dots"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:visibility="gone"/>
+
+</RelativeLayout>

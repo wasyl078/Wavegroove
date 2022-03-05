@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/colorAccent"
+        android:animateLayoutChanges="true">
+
+    <ImageView
+            android:id="@+id/customNotificationImageView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="@android:color/black"
+            app:srcCompat="@drawable/hifi" />
+
+    <TextView
+            android:id="@+id/customNotificationTitleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@+id/customNotificationRewindButton"
+            android:layout_toEndOf="@+id/customNotificationImageView"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Title"
+            android:textColor="@color/Black"
+            android:textSize="12sp" />
+
+    <TextView
+            android:id="@+id/customNotificationAlbumTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/customNotificationArtistTextView"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="11dp"
+            android:layout_toStartOf="@+id/customNotificationRewindButton"
+            android:layout_toEndOf="@+id/customNotificationImageView"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Album"
+            android:textColor="@color/Black"
+            android:textSize="12sp" />
+
+    <TextView
+            android:id="@+id/customNotificationArtistTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/customNotificationTitleTextView"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@+id/customNotificationRewindButton"
+            android:layout_toEndOf="@+id/customNotificationImageView"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Artist"
+            android:textColor="@color/Black"
+            android:textSize="12sp" />
+
+    <Button
+            android:id="@+id/customNotificationForwardButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/ic_fast_forward"
+            android:backgroundTint="@color/Black"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+
+    <Button
+            android:id="@+id/customNotificationPlayPauseButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="0dp"
+            android:layout_toStartOf="@+id/customNotificationForwardButton"
+            android:background="@drawable/ic_play_circle_filled"
+            android:backgroundTint="@color/Black" />
+
+    <Button
+            android:id="@+id/customNotificationRewindButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="0dp"
+            android:layout_toStartOf="@+id/customNotificationPlayPauseButton"
+            android:background="@drawable/ic_fast_rewind"
+            android:backgroundTint="@color/Black" />
+
+</RelativeLayout>

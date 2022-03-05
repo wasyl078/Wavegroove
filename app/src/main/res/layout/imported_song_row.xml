@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_on_bottom"
+        android:paddingHorizontal="10dp"
+        android:paddingBottom="10dp"
+        android:animateLayoutChanges="true">
+
+    <ImageView
+            android:id="@+id/importedSongRowImageView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:srcCompat="@drawable/hifi"
+            android:scaleType="fitXY"
+            android:padding="5dp"
+            android:background="@drawable/square_round_corners_app_icon_blue"
+            tools:layout_editor_absoluteY="15dp"
+            tools:layout_editor_absoluteX="17dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp" />
+
+    <TextView
+            android:id="@+id/songTitleImportedSongRowTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@+id/toAddImportedSongRowCheckBox"
+            android:layout_toEndOf="@+id/importedSongRowImageView"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="song title"
+            android:textColor="@color/AppTextColor"
+            android:textSize="18dp"
+            android:textStyle="italic" />
+
+    <TextView
+            android:id="@+id/songArtistImportedSongRowTextView"
+            android:text="artist"
+            android:textColor="@color/AppTextColor"
+            android:textStyle="italic"
+            android:textSize="13dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="100dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:layout_marginTop="3dp"
+            android:layout_below="@+id/songTitleImportedSongRowTextView"
+            android:layout_toEndOf="@+id/importedSongRowImageView"
+            android:layout_marginStart="10dp" />
+
+    <TextView
+            android:id="@+id/songAlbumImportedSongRowTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/songTitleImportedSongRowTextView"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@+id/toAddImportedSongRowCheckBox"
+            android:layout_toEndOf="@+id/songArtistImportedSongRowTextView"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="album"
+            android:textColor="@color/AppTextColor"
+            android:textSize="13dp"
+            android:textStyle="italic" />
+
+    <TextView
+            android:id="@+id/songDurationImportedSongRowTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/songArtistImportedSongRowTextView"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_toEndOf="@+id/importedSongRowImageView"
+            android:text="01:23"
+            android:textColor="@color/AppTextColor"
+            android:textSize="13dp"
+            android:textStyle="italic" />
+
+    <CheckBox
+            android:id="@+id/toAddImportedSongRowCheckBox"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:srcCompat="@drawable/ic_vertical_dots"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="0dp" />
+
+</RelativeLayout>

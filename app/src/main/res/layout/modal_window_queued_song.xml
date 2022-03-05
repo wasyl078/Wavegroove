@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/capsule_modal_window"
+        android:paddingBottom="5dp"
+        android:animateLayoutChanges="true">
+
+    <TextView
+            android:id="@+id/songNameModalWindowQueuedSongTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="queued song name"
+            android:textColor="@color/AppTextColor"
+            android:textSize="25dp"
+            android:textStyle="italic" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/songNameModalWindowQueuedSongTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp"
+            android:paddingBottom="5dp">
+
+        <Button
+                android:id="@+id/moveTopModalWindowQueuedSongButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="move song to top" />
+
+        <Button
+                android:id="@+id/moveBottonModalWindowQueuedSongButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="move song to bottom" />
+
+        <Button
+                android:id="@+id/removeFromQueueCoverModalWindowQueuedSongButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="remove song from queue" />
+    </LinearLayout>
+
+
+</RelativeLayout>

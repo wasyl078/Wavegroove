@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/capsule_modal_window"
+        android:orientation="vertical"
+        android:paddingRight="3dp"
+        android:paddingLeft="3dp"
+        android:layout_gravity="right"
+        android:animateLayoutChanges="true">
+
+    <Button
+            android:id="@+id/createNewPlaylistButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:gravity="left|center_vertical"
+            android:text="create new playlist"
+            android:background="@android:color/transparent"/>
+
+    <Button
+            android:id="@+id/clearQueueButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:gravity="left|center_vertical"
+            android:text="clear queue"
+            android:background="@android:color/transparent"/>
+
+    <Button
+            android:id="@+id/aboutButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="about"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:gravity="left|center_vertical"
+            android:background="@android:color/transparent"/>
+    <Button
+            android:id="@+id/settingsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="settings"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:gravity="left|center_vertical"
+            android:background="@android:color/transparent"/>
+</LinearLayout>

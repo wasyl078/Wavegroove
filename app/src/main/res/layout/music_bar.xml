@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:animateLayoutChanges="true">
+
+    <ImageView
+            android:id="@+id/backgroundMusicBarImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
+            android:background="@color/AppLightBlue" />
+
+    <ImageView
+            android:id="@+id/progressBarRedMusiBarImageView"
+            android:layout_width="400dp"
+            android:layout_height="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:background="@color/Red"
+            android:translationZ="90dp" />
+
+    <ImageView
+            android:id="@+id/progressBarGreyMusiBarImageView"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:background="@color/DarkGray" />
+
+    <ImageView
+            android:id="@+id/songMusicBarImageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/square_round_corners_app_icon_blue"
+            android:padding="5dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/hifi"
+            tools:layout_editor_absoluteX="17dp"
+            tools:layout_editor_absoluteY="15dp" />
+
+    <TextView
+            android:id="@+id/titleMusicBarTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@+id/fastRewindMusicBarImageButton"
+            android:layout_toEndOf="@+id/songMusicBarImageView"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="TextView"
+            android:textSize="18sp" />
+
+    <TextView
+            android:id="@+id/artistMusicBarTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titleMusicBarTextView"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_toEndOf="@+id/songMusicBarImageView"
+            android:ellipsize="end"
+            android:maxWidth="100dp"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="TextView"
+            android:textSize="13sp" />
+
+    <TextView
+            android:id="@+id/albumMusicBarTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/artistMusicBarTextView"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@+id/fastRewindMusicBarImageButton"
+            android:layout_toEndOf="@+id/artistMusicBarTextView"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="TextView"
+            android:textSize="13sp" />
+
+    <TextView
+            android:id="@+id/durationMusicBarTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/artistMusicBarTextView"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_toEndOf="@+id/songMusicBarImageView"
+            android:text="TextView"
+            android:textSize="13sp" />
+
+    <ImageButton
+            android:id="@+id/fastRewindMusicBarImageButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/fastForwardMusicBarImageButton"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="5dp"
+            android:layout_toStartOf="@+id/playPauseMusicBarImageButton"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:tint="@color/Black"
+            app:srcCompat="@drawable/ic_fast_rewind" />
+
+    <ImageButton
+            android:id="@+id/fastForwardMusicBarImageButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="5dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:tint="@color/Black"
+            app:srcCompat="@drawable/ic_fast_forward" />
+
+    <ImageButton
+            android:id="@+id/playPauseMusicBarImageButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/fastForwardMusicBarImageButton"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="5dp"
+            android:layout_toStartOf="@+id/fastForwardMusicBarImageButton"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:tint="@color/Black"
+            app:srcCompat="@drawable/ic_pause_circle_filled" />
+
+</RelativeLayout>
